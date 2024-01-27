@@ -32,22 +32,36 @@ const handleSubmit = async (event) => {
 
   return (
     <>
-    <h1>Welcome Back, Please Log-In!</h1>  
-    <Form action="http://localhost:3001/log-in" method='post' onSubmit={handleSubmit}>
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+      <h1>Welcome Back, Please Log-In!</h1>  
+        </div>
+      </div>
+    
+      <div className="row"> 
+        <div className=" col-6 ">
+        <Form action="http://localhost:3001/log-in" method='post' onSubmit={handleSubmit}>
+      
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control onChange={(event)=>{setEmail(event.target.value)}} type="email" placeholder="Enter email" />
         </Form.Group>
+          
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control onChange={(event)=>{setPassword(event.target.value)}}  type="password" placeholder="Password" />
+          </Form.Group>
+          
+          <Button variant="primary" type="submit">
+          Submit
+          </Button>
+          </Form>
+        </div>
+      </div>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control onChange={(event)=>{setPassword(event.target.value)}}  type="password" placeholder="Password" />
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    </div>
+    
     </>
   )
 }
