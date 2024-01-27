@@ -1,21 +1,35 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+
 
 function Home() {
   return (
-    <div className="container">
-      <div className='container-fluid-masthead'>
-        <div className='row'>
-          <div className='col-12 masthead-logo'> <img src='dummy' />
-          </div>
-          <div className='col-12 masthead-links'>
-          <Button variant="primary">Primary</Button>{' '}
-          <Button variant="success">Success</Button>{' '}
-          <Button variant="warning">Warning</Button>{' '}  
+    <>
+      <div className='container home-text'>
+        <div className='row home-font'>
+          <div className='col-6'>
+          
           </div>
         </div>
+      
       </div>
-    </div>
+
+      <div className='container homelaptop-img'>
+        <div className='row home-laptop'>
+          <div className='col-12 mt-4 mb-4 border border-danger'>
+          
+            <Image src="./images/home-laptop.jpg" roundedCircle />
+        
+          </div>
+        </div>
+      
+      </div>
+
+
+    
+    </>
   )
 }
 
