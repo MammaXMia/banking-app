@@ -103,13 +103,6 @@ app.get("/likes", async (req, res) => {
 })
 
 
-
-
-
-
-
-
-
 app.post("/likes", async (req, res) => {
 
     let likes = req.body.likes

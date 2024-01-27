@@ -1,57 +1,68 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 const Signup = () => {
 
-const [email, setEmail] = useState("")
-const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
 
-const navigate= useNavigate()
+  const navigate = useNavigate()
 
-const handleSubmit = async (event) => { 
-  event.preventDefault();
-  const data ={
-    email,password
-  }
-  fetch ("http://localhost:3001/sign-up",{
-    method: "POST",
-    headers:{
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data),
-  })
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = {
+      email, password
+    }
+    fetch("http://localhost:3001/sign-up", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data),
+    })
 
 
-  navigate('/home');
-  
-};
+    navigate('/home');
+
+  };
 
   return (
     <>
-    <h1>Join our community!!</h1>  
-    <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control onChange={(event)=>{setEmail(event.target.value)}} type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-        </Form.Group>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 mt-4">
+            <h1>Join our community!!</h1>
+          </div>
+        </div>
+
+        <div className='row justify-content-center pt-4'>
+          <div className='col-4'>
+            <Form onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control onChange={(event) => { setEmail(event.target.value) }} type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
 
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control onChange={(event)=>{setPassword(event.target.value)}}  type="password" placeholder="Password" />
-      </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control onChange={(event) => { setPassword(event.target.value) }} type="password" placeholder="Password" />
+              </Form.Group>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

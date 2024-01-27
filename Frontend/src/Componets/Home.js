@@ -28,8 +28,8 @@ function Home() {
 
 
       <div className='container homelaptop-img'>
-        <div className='row home-laptop'>
-          <div className='col-12 mt-4 mb-4 border border-danger'>
+        <div className="row home-laptop">
+          <div className="col-12 mt-4 mb-4 border border-danger">
             <Image src="./images/home-laptop.jpg" roundedCircle />
           </div>
         </div>

@@ -6,6 +6,7 @@ import Signup from './Componets/Signup';
 import Login from './Componets/LogIn';
 import Home from './Componets/Home';
 import Blogs from './Componets/Blogs';
+import logout from './Componets/Logout';
 
 function App() {
   return (
@@ -13,16 +14,19 @@ function App() {
       <BaseLayout>
         <Routes>
           <Route path='/signup' element={
-            <Signup />
+            <Signup/>
           } />
           <Route path='/login' element={
-            <Login/>
+            <Login />
           } />
           <Route path='/home' element={
-            <Home/>
+            <Home />
           } />
           <Route path='/blogs' element={
-            <Blogs/>
+            <Blogs />
+          } />
+          <Route path='/logout' element={
+            <Logout />
           } />
         </Routes>
       </BaseLayout>
