@@ -32,35 +32,38 @@ const handleSubmit = async (event) => {
 
   return (
     <>
-    <div className="container">
-      <div className="row">
-        <div className="col-12 mt-4 ">
-      <h1>Welcome Back, Please Log-In!</h1>  
-        </div>
+
+    <div className="container-fluid homelaptop login header-wrap d-flex align-items-center">
+
+    <div className="container signup-wrapper">
+
+      <div className='row justify-content-center p-4'>
+      <div className="col-12 mb-2">
+       <h1>Welcome Back, Please Log-In!</h1>
       </div>
-    
-      <div className="row justify-content-center pt-4"> 
-        <div className="col-4">
+        <div className='col-8'>
           <Form action="http://localhost:3001/log-in" method='post' onSubmit={handleSubmit}>
-      
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control onChange={(event)=>{setEmail(event.target.value)}} type="email" placeholder="Enter email" />
-            </Form.Group>
-              
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control onChange={(event)=>{setPassword(event.target.value)}}  type="password" placeholder="Password" />
-            </Form.Group>
+        
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control onChange={(event)=>{setEmail(event.target.value)}} type="email" placeholder="Enter email" />
+          </Form.Group>
             
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control onChange={(event)=>{setPassword(event.target.value)}}  type="password" placeholder="Password" />
+          </Form.Group>
+          
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
           </Form>
         </div>
       </div>
-
     </div>
+  </div>
+
+   
     
     </>
   )

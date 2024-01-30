@@ -2,11 +2,6 @@
 /*========= VARIBALES ======== */
 /*========= RESET  =========== */
 
-.rounded-circle{
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-}
 
 /*========= GLOBAL STYLING ========== */
 
@@ -27,30 +22,42 @@ h1, a{
 /*========= HEADER IMAGE: BLOG PAGE ========== */
 
 /* no spaces .(inbetween).(classNames) = grab the element with both classNames  */
-
-.blog-page.header{
-  border:2px solid red;
+.homelaptop.header-wrap{
+  background-image: url('../public/Images/home-laptop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
 }
 
 /*spaces .(inbetween) .(classNames) = grab element 'inside' .className(parent) called .className(child) */
+.homelaptop .homelaptop-text{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.466); 
+  font-weight:bold;
+}
 
-.blog-page .header-wrap{
-  border: 2px dashed black;
+.blog-page.header-wrap{
   background-image: url('../public/Images/blog-piggybank.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  min-height: 450px;
+}
+
+
+.signup-wrapper{
+  background-color: rgba(0, 0, 0, 0.466); 
+  color:white;
+}
+
+.signup-wrapper .text-muted{
+  color:white;
 }
 
 /* .(className) = grab ALL elements that share this className */
 
-.header-card{
-  background-color: #F4DBD8;
-  border: 1px solid blue;
-
-}
 
 .header-card .card-title{
+  font-family: 'Courgette', cursive;
   font-weight: 500;
   font-size: 2em;
 }
@@ -69,9 +76,25 @@ h1, a{
 .blog-img{
 object-fit: cover;
 height: 400px;
-
+max-height: 400px;
 }
 
+/* ======== FOOTER ========== */
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+.footer ul{
+  list-style:none;
+}
+
+.footer a{
+  font-family: 'Helvetica', sans-serif;
+  color:white;
+  
+}
 /* ======== NAVIGATION ========== */
 
 .App {

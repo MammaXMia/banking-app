@@ -32,37 +32,40 @@ const Signup = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 mt-4">
-            <h1>Join our community!!</h1>
+      <div className="container-fluid homelaptop signup header-wrap d-flex align-items-center">
+
+        <div className="container signup-wrapper">
+    
+          <div className='row justify-content-center p-4'>
+          <div className="col-12 mb-2">
+           <h1>Join our community!</h1>
           </div>
-        </div>
-
-        <div className='row justify-content-center pt-4'>
-          <div className='col-4'>
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control onChange={(event) => { setEmail(event.target.value) }} type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
+            <div className='col-8'>
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control onChange={(event) => { setEmail(event.target.value) }} type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                </Form.Group>
 
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control onChange={(event) => { setPassword(event.target.value) }} type="password" placeholder="Password" />
-              </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control onChange={(event) => { setPassword(event.target.value) }} type="password" placeholder="Password" />
+                </Form.Group>
 
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
+
+     
     </>
   )
 }
