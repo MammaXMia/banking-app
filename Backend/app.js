@@ -89,6 +89,19 @@ app.post("/log-in", (req, res) => {
 
         })
 })
+
+app.get("/logout", (req,res) =>{
+    req.session.destroy(function(err) {
+        if (err){
+            res.json (err)
+        }
+        else {
+            res.json ("your logged out")
+        }
+      })
+}
+
+)
 // route to get likes
 app.get("/likes", async (req, res) => {
 

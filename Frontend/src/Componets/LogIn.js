@@ -26,7 +26,7 @@ const handleSubmit = async (event) => {
   })
 
 
-  navigate('/home');
+  navigate('/');
   
 };
 

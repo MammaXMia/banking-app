@@ -1,5 +1,6 @@
 {
   "name": "banking-app",
+  "homepage": "http://localhost:3002/home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
