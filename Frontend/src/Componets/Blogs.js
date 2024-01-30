@@ -53,7 +53,7 @@ function Blogs() {
             <Card.Body>
               <Card.Title>Finance Tips for New Parents</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">My Fab Finance!</Card.Subtitle>
-              <Card.Img className="blog-img" variant="top" src="./images/blog-baby-blog.jpg" />
+              <div className="img-box blog-baby"></div>
               <Card.Text className="mt-2 tips-new-parents-text">
                 Congratulations! You are walking into one of the most joyous and emotion-filled chapters of your life. And it may also be one of the most expensive. There’s so much to think about when you are a new parent. Especially finances. All new parents can benefit from finance tips
               </Card.Text>
@@ -70,7 +70,7 @@ function Blogs() {
             <Card.Body>
               <Card.Title>Everyone says I need a Roth IRA. Do I really?</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">Women Who Money</Card.Subtitle>
-              <Card.Img className="blog-img" variant="top" src="./images/blog-budget-blog.jpg" />
+              <div className="img-box blog-roth"></div>
               <Card.Text className="mt-2 roth-text" >
                 If there is one thing that personal finance gurus all seem to agree on, it is this: You should have a Roth IRA account.
                 Alongside budgeting and having an emergency cash reserve, it has assumed its place as bread-and-butter advice ...
@@ -87,7 +87,7 @@ function Blogs() {
             <Card.Body>
               <Card.Title>Financial Snapshot Spreadsheet</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">Budgets Are Sexy</Card.Subtitle>
-              <Card.Img className="blog-img" variant="top" src="./images/blog-investing-blog.jpg" />
+              <div className="img-box blog-spreadsheets"></div>
               <Card.Text className="mt-2 spreadsheets-text">
                 “I’m bringing budgets back (yup!) Them other non-budgeters don't know how to act (yup!)”
                 Mr. Timberlake got nothing on me What, you don’t think that's the same as bringing sexy back? Well check the calculation my friends.
@@ -104,7 +104,7 @@ function Blogs() {
             <Card.Body>
               <Card.Title>What Are 10 Ways To Save Money?</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">The Budgetnista</Card.Subtitle>
-              <Card.Img className="blog-img" variant="top" src="./images/blog-saving-blog.jpg" />
+              <div className="img-box blog-save"></div>
               <Card.Text className="mt-2 10-savingmoney-text">
                 Imagine a life where you effortlessly navigate financial challenges, where saving becomes second nature, and your money works for you. Today we answer the question, “what are 10 ways to save ..
               </Card.Text>
@@ -119,7 +119,7 @@ function Blogs() {
     </div>
 
     <div className="container-fluid footer">
-        <div class="row">
+        <div className="row">
           <div className="col-12 pt-3">
             <h1>Money Cents</h1>
           </div>

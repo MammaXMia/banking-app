@@ -33,7 +33,7 @@ function Home() {
 
             <div className="col-12 mb-4">
               
-              <a href="/blogs"><button class="fw-bold">Read Our Blog</button></a>
+              <a href="/blogs"><button className="fw-bold">Read Our Blog</button></a>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ function Home() {
 
 
       <div className="container-fluid footer">
-        <div class="row">
+        <div className="row">
           <div className="col-12 pt-3">
             <h1>Money Cents</h1>
           </div>
